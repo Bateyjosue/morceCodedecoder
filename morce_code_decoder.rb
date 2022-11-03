@@ -20,13 +20,14 @@ def decode_word(string)
   word
 end
 
-# def decode(string)
-#   puts string
-# end
+def decode(string)
+  a = ''
+  string.split('  ').each do |alpha|
+    a += "#{decode_word(alpha)} "
+  end
+  a
+end
 
-# puts decode_char('.-')
+puts decode_char('.-')
 puts decode_word('-- -.--')
-# puts decode('-- -.--   -. .- -- .')
-
-# # Final Test
-# puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
