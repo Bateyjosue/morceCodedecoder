@@ -13,11 +13,11 @@ end
 
 def decode_word(string)
   word = ''
-  alphas = string.split()
+  alphas = string.split
   alphas.each do |alpha|
     word += decode_char(alpha)
   end
-  return word
+  word
 end
 
 # def decode(string)
