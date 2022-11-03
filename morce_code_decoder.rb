@@ -11,16 +11,21 @@ def decode_char(string)
   end
 end
 
-# def decode_word(string)
-#   puts string
-# end
+def decode_word(string)
+  word = ''
+  alphas = string.split()
+  alphas.each do |alpha|
+    word += decode_char(alpha)
+  end
+  return word
+end
 
 # def decode(string)
 #   puts string
 # end
 
-puts decode_char('.-')
-# puts decode_word('-- -.--')
+# puts decode_char('.-')
+puts decode_word('-- -.--')
 # puts decode('-- -.--   -. .- -- .')
 
 # # Final Test
