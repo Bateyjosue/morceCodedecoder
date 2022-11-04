@@ -31,6 +31,11 @@ This repository includes Ruby Scripts
 - Twitter: [@JosueBatey](https://twitter.com/josuebatey)
 - LinkedIn: [Josue (Josh) Batey](https://www.linkedin.com/in/josue-ishara/)
 
+👤 **Mirwais Farahi**
+
+- GitHub: [@githubhandle](https://github.com/mirwaisfarahi)
+- Twitter: [@twitterhandle](https://twitter.com/farahi92)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
