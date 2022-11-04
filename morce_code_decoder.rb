@@ -5,12 +5,14 @@ MORCE_CODE = { 'A' => '.-', 'B' => '-...', 'C' => '-.-.', 'D' => '-..', 'E' => '
                '2' => '..---', '3' => '...--', '4' => '....-', '5' => '.....', '6' => '-....', '7' => '--...',
                '8' => '---..', '9' => '----.' }.freeze
 
+# Alphabet
 def decode_char(string)
   MORCE_CODE.each do |code, alpha|
     return code if alpha == string
   end
 end
 
+# word
 def decode_word(string)
   word = ''
   alphas = string.split
@@ -20,10 +22,11 @@ def decode_word(string)
   word
 end
 
+# senetence
 def decode(string)
   a = ''
   string.split('  ').each do |alpha|
-    a += "#{decode_word(alpha)} "
+    a += decode_word(alpha) + ' '
   end
   a
 end
