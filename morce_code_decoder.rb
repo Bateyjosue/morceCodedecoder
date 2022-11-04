@@ -23,7 +23,7 @@ end
 def decode(string)
   a = ''
   string.split('  ').each do |alpha|
-    a += decode_word(alpha) + ' '
+    a += "#{decode_word(alpha)} "
   end
   a
 end
